@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AYUCORP</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Include your custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Your Company</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+    <!-- Transparent Navbar (Initially Hidden) -->
+    <nav class="navbar navbar-expand-lg navbar-transparent fixed-top">
+      <div class="navbar-brand-item">
+        <a class="navbar-brand" href="#"
+          ><img
+            width="200"
+            height="auto"
+            src="./assets/images/logo-no-background.png"
+        /></a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="nav-items">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        style="
+          flex-shrink: 0;
+          -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+        "
+      ></div>
+    </nav>
+
+    <!-- Opaque Navbar (Initially Hidden) -->
+    <nav class="navbar navbar-expand-lg navbar-opaque fixed-top">
+      <div class="navbar-brand-item">
+        <a class="navbar-brand" href="#"
+          ><img
+            width="200"
+            height="auto"
+            src="./assets/images/logo-no-background.png"
+        /></a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="nav-items">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        style="
+          flex-shrink: 0;
+          -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+        "
+      ></div>
+    </nav>
+
+    <!-- Full-Screen Welcome Overlay -->
+    <!-- Home Page Content with Video Background -->
+    <div id="home" class="welcome-overlay">
+      <!-- Video Background -->
+      <video autoplay muted loop class="video-background">
+        <source src="./assets/videos/aditya.mp4" type="video/mp4" />
+        <!-- Replace with your video file -->
+        Your browser does not support the video tag.
+      </video>
+      <!-- Overlay with Opacity -->
+      <div class="overlay"></div>
+      <!-- Content Overlay -->
+      <div class="container text-center overlay-content" data-aos="fade-in">
+        <h1>Welcome to Ayucorp</h1>
+        <a class="btn btn-primary" href="#about-us">Learn More</a>
+      </div>
+    </div>
+
+    <!-- About Us Page Content -->
+    <div id="about-us" class="about-us-fullscreen">
+      <div class="mt-5 m-4">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <h1 class="text-center mb-5">About Us</h1>
+        </div>
+
+        <div class="row">
+          <!-- Image Column (Left) -->
+          <div
+            class="col-md-6"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="./assets/images/about-us.jpg"
+              style="max-width: 80%"
+              alt="About Us Image"
+              class="img-fluid"
+            />
+          </div>
+          <!-- Text Column (Right) -->
+          <div
+            class="col-md-6"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <!-- <h2>About AyuCorp</h2> -->
+            <p>
+              Welcome to AyuCorp, a leading software company dedicated to
+              transforming ideas into innovative software solutions. Established
+              in 2021 by visionary entrepreneur Aditya Gaurav, AyuCorp has been
+              on a mission to revolutionize the tech industry through
+              cutting-edge software products.
+            </p>
+
+            <h3 class="vision">Our Vision</h3>
+            <p>
+              At AyuCorp, we believe in the power of innovation. Our vision is
+              to create software solutions that not only meet the needs of today
+              but also anticipate the challenges of tomorrow. We strive to push
+              the boundaries of technology and provide our clients with the
+              tools they need to thrive in a rapidly evolving digital landscape.
+            </p>
+
+            <h3 class="mission">Our Journey</h3>
+            <p>
+              Since our inception, AyuCorp has embarked on an exciting journey
+              of exploration and development. We have assembled a team of
+              passionate and skilled professionals who share our commitment to
+              innovation. Together, we have worked on a diverse range of
+              software products, each designed to make a positive impact on
+              businesses and individuals alike.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us Page Content -->
+    <!-- Contact Us Page Content as Full-Screen -->
+    <div id="contact" class="contact-us-fullscreen">
+      <div
+        class="container text-center"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
+        <h1>Contact Us</h1>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+          <!-- Contact Form Column -->
+          <div data-aos="fade-down-right" class="col-md-6">
+            <h2>Contact Form</h2>
+            <!-- Add your contact form here -->
+            <div>
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="full-name">Full Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="full-name"
+                    name="full-name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone-number">Phone Number:</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone-number"
+                    name="phone-number"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="feedback">Feedback:</label>
+                  <textarea
+                    class="form-control"
+                    id="feedback"
+                    name="feedback"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Address and Map Column -->
+
+          <div class="col-md-6" data-aos="fade-up-left">
+            <!-- Static Google Map with Location Pin -->
+            <div class="static-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31111.6842324243!2d77.6458227!3d12.910258449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1491bfdc6ecd%3A0xf232718439fbc879!2sHSR%20Layout%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1695456533246!5m2!1sen!2sin"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <h2>Address</h2>
+              <p>
+                #27, Gangamma Nilaya, Hosapalya Main Road, Bommanahalli
+                Bengaluru, Karnataka - 560068
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+      "
+    >
+      <footer class="footer">
+        <div class="container text-center">
+          <p style="margin: 0">
+            &copy; <span id="current-year"></span> ayucorp
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include your custom JavaScript -->
+    <script>
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+
+      // Update the content of the "current-year" span
+      document.getElementById('current-year').textContent = currentYear;
+
+      // Function to toggle the navigation bars
+      function toggleNavBars() {
+        const scrollY = window.scrollY || window.pageYOffset;
+        const aboutUsSection = document.getElementById('about-us');
+
+        // Height at which to toggle the navigation bars
+        const toggleHeight = aboutUsSection.offsetTop;
+
+        const transparentNavbar = document.querySelector('.navbar-transparent');
+        const opaqueNavbar = document.querySelector('.navbar-opaque');
+        console.log(toggleHeight);
+        if (scrollY >= 100) {
+          console.log('called');
+          transparentNavbar.style.display = 'none';
+          opaqueNavbar.style.display = 'flex';
+        } else {
+          console.log('called else');
+
+          transparentNavbar.style.display = 'flex';
+          opaqueNavbar.style.display = 'none';
+        }
+      }
+
+      // Add scroll event listener
+      window.addEventListener('scroll', toggleNavBars);
+    </script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // You can also pass an optional settings object
+      // below listed default settings
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+  </body>
+</html>
