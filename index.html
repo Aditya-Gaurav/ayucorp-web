@@ -38,7 +38,7 @@
     <link rel="icon" href="./assets/images/favicon.ico" />
   </head>
   <body>
-    <!-- Transparent Navbar (Initially Hidden) -->
+    <!-- Transparent Navbar (Initially Shown) -->
     <nav class="navbar navbar-expand-lg navbar-transparent fixed-top">
       <div class="navbar-brand-item">
         <a class="navbar-brand" href="#"
@@ -53,8 +53,6 @@
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
@@ -75,7 +73,9 @@
         </div>
       </div>
       <div
+        class="invisible-element"
         style="
+          display: none;
           flex-shrink: 0;
           -webkit-box-flex: 1;
           -ms-flex-positive: 1;
@@ -86,7 +86,7 @@
       ></div>
     </nav>
 
-    <!-- Opaque Navbar (Initially Hidden) -->
+    <!-- Blacl Navbar (Initially Hidden) -->
     <nav class="navbar navbar-expand-lg navbar-opaque fixed-top">
       <div class="navbar-brand-item">
         <a class="navbar-brand" href="#"
@@ -101,8 +101,6 @@
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
@@ -123,7 +121,9 @@
         </div>
       </div>
       <div
+        class="invisible-element"
         style="
+          display: none;
           flex-shrink: 0;
           -webkit-box-flex: 1;
           -ms-flex-positive: 1;
