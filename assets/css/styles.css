@@ -6,6 +6,12 @@ body,html{
   overflow-x: hidden;
 
 }
+.btn-black{
+  color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    margin-top: 10px;
+}
 .aboutus-img{
   width:80%;
   margin-bottom: 10px;
