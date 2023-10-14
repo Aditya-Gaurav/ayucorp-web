@@ -81,7 +81,7 @@ body,html{
   color: white;
   height: 100%;
   top:95%;
-  left:49%;
+  left:48.5%;
   width:100%;
   transform: translate(-50%,-50%);
 
@@ -228,5 +228,9 @@ body,html{
     .aboutus-img{
       width:100%;
       margin-bottom: 10px;
+    }
+
+    .scroll-to-about {
+      left: 43%;
     }
 }
