@@ -2,18 +2,18 @@
 html {
   scroll-behavior: smooth;
 }
-body,html{
+body,
+html {
   overflow-x: hidden;
-
 }
-.btn-black{
+.btn-black {
   color: #000;
   background-color: #fff;
   border-color: #fff;
   margin-top: 10px;
 }
-.aboutus-img{
-  width:80%;
+.aboutus-img {
+  width: 80%;
   margin-bottom: 10px;
 }
 .navbar-toggler {
@@ -29,7 +29,7 @@ body,html{
   height: 100vh;
   overflow: hidden;
 }
-.nav-link{
+.nav-link {
   color: white;
   font-size: 20px;
 }
@@ -76,7 +76,7 @@ body,html{
     transform: translateY(-10px);
   }
 }
-.scroll-to-about{
+.scroll-to-about {
   position: absolute;
   z-index: 1;
   /* display: flex;
@@ -86,36 +86,32 @@ body,html{
   text-align: center; */
   color: white;
   height: 100%;
-  top:95%;
-  left:48.5%;
-  width:100%;
-  transform: translate(-50%,-50%);
-
+  top: 95%;
+  left: 48.5%;
+  width: 100%;
+  transform: translate(-50%, -50%);
 }
 /* Custom CSS for the full-screen About Us and Contact Us sections */
 .about-us-fullscreen,
 .contact-us-fullscreen {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* text-align: center; */
-    color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  color: white;
 }
 
 .about-us-fullscreen {
   background-color: white; /* Black background */
   color: black; /* Black text for contrast on white background */
-
 }
 
 .contact-us-fullscreen {
   background-color: black; /* White background */
   color: white; /* Black text for contrast on white background */
 }
-
-
 
 .contact-us-fullscreen h1 {
   font-size: 36px;
@@ -150,23 +146,20 @@ body,html{
   display: none;
   transition: background-color 0.3s ease-in-out;
   z-index: 1000;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.6);
-
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
-.navbar-brand{
+.navbar-brand {
   color: white;
   font-size: 30px;
 }
-  .navbar-brand-item{
-    flex-shrink: 0;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
+.navbar-brand-item {
+  flex-shrink: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
 }
-  
-
 
 /* .nav-items{
   -webkit-box-flex: 3;
@@ -189,54 +182,52 @@ body,html{
 } */
 
 @media (min-width: 992px) {
-.navbar-expand-lg .navbar-nav .nav-link:not(:first-child) {
+  .navbar-expand-lg .navbar-nav .nav-link:not(:first-child) {
     /* padding-right: 20px;
     padding-left: 20px; */
-    
-}
-.invisible-element{
-  display: flex;
-}
+  }
+  .invisible-element {
+    display: flex;
+  }
 }
 
-
-   /* Custom CSS for the "About" section content */
-   .about-content {
-    background-color: #f5f5f5; /* Background color for the "About" section */
-    padding: 40px 0;
+/* Custom CSS for the "About" section content */
+.about-content {
+  background-color: #f5f5f5; /* Background color for the "About" section */
+  padding: 40px 0;
 }
 
 .about-content h2 {
-    font-size: 28px;
-    color: #333; /* Text color for headings */
-    margin-bottom: 20px;
+  font-size: 28px;
+  color: #333; /* Text color for headings */
+  margin-bottom: 20px;
 }
 
 .about-content p {
-    font-size: 18px;
-    color: #555; /* Text color for paragraphs */
+  font-size: 18px;
+  color: #555; /* Text color for paragraphs */
 }
 
 /* Additional styles for the "About AYCorp" content */
 .vision {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .mission {
-    font-style: italic;
+  font-weight: bold;
 }
 
 /* Adjust the alignment for mobile view */
 @media (max-width: 767px) {
-    .about-content {
-        text-align: center;
-    }
-    .aboutus-img{
-      width:100%;
-      margin-bottom: 10px;
-    }
+  .about-content {
+    text-align: center;
+  }
+  .aboutus-img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
-    .scroll-to-about {
-      left: 43%;
-    }
+  .scroll-to-about {
+    left: 43%;
+  }
 }
