@@ -6,6 +6,10 @@ body,html{
   overflow-x: hidden;
 
 }
+.aboutus-img{
+  width:80%;
+  margin-bottom: 10px;
+}
 .navbar-toggler {
   border-color: rgb(255, 255, 255) !important;
   border: rgb(255, 255, 255) !important;
@@ -52,6 +56,35 @@ body,html{
   color: white;
   padding: 20px;
   height: 100%;
+}
+.scroll-to-about {
+  animation: jump 1s infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.scroll-to-about{
+  position: absolute;
+  z-index: 1;
+  /* display: flex;
+  flex-direction: column;
+  justify-content:end;
+  align-items: center;
+  text-align: center; */
+  color: white;
+  height: 100%;
+  top:95%;
+  left:49%;
+  width:100%;
+  transform: translate(-50%,-50%);
+
 }
 /* Custom CSS for the full-screen About Us and Contact Us sections */
 .about-us-fullscreen,
@@ -191,5 +224,9 @@ body,html{
 @media (max-width: 767px) {
     .about-content {
         text-align: center;
+    }
+    .aboutus-img{
+      width:100%;
+      margin-bottom: 10px;
     }
 }
